@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import { RxCross2 } from "react-icons/rx";
 import { IoLocationOutline } from "react-icons/io5";
 import { TbWorld } from "react-icons/tb";
+import { IoIosArrowDown } from "react-icons/io";
+import { MdOutlineShoppingBag } from "react-icons/md";
+import { MdOutlineDeliveryDining } from "react-icons/md";
 
 const Navbar = () => {
 
@@ -65,9 +68,9 @@ const Navbar = () => {
             
             </div>
 
-            <div className='w-full h-[150px]  shadow-[0_10px_40px_rgba(0,0,0,0.15)] flex justify-center'>
+            <div className='w-full h-[150px]  shadow-[0_10px_40px_rgba(0,0,0,0.15)] flex flex-col justify-center items-center'>
 
-                <div className='w-[80%] h-[50%] flex bg-amber-100'>
+                <div className='w-[80%] h-[50%] flex'>
 
                     <div className='w-[180px] h-[100%]flex'>
 
@@ -75,13 +78,21 @@ const Navbar = () => {
 
                     </div>
 
-                     <div className='w-[25%] ml-[15%] text-2xl h-[100%] flex items-center'>
+                     <div className='w-[25%] ml-[15%] text-2xl h-[100%] flex items-center' >
 
+                        <button className='w-[80%] h-[40px] rounded-[10px] bg-white flex justify-center items-center text-gray-400 hover:bg-gray-200 hover:h-[50px] transition-all: ease-in-out duration-200'>
+
+                            
                            <IoLocationOutline />
 
-                            <div className='text-[16px] pl-3'>
+                              <div className='text-[16px] pl-3'>
                                 <span>New address Select your address</span>
                             </div>
+
+                        </button>
+
+
+                         
                     </div>
 
                     <div className='w-[40%] h-[100%] ml-[13%] flex items-center '>
@@ -105,13 +116,41 @@ const Navbar = () => {
 
                     </div>
 
-                    <div className='w-[100px] items-center h-[60%] ml-5 bg-blue-300 text-2xl'>
+                    <div className='w-[100px] items-center flex rounded-[10px] bg-white h-[60%] hover:bg-amber-50 hover:h-[65%] transition-all: ease-in-out duration-100 ml-5 text-2xl'>
 
-                            <button className='w-[100%] h-[100%]'>
-                                    <TbWorld />  <span className='text-[18px]'>EN</span>
+                            <button className='w-[100%] h-[100%] flex items-center flex'>
+
+                                    <span className='text-[24px] mt-1'>
+                                             <TbWorld />
+
+                                    </span>
+                               
+
+                                      <span className='text-[16px] pl-3'>
+                                        
+                                        EN
+
+                                      </span>
+
+                                      <span className='text-[20px] mt-1 pl-3 text-pink-600'>
+
+                                        <IoIosArrowDown />
+
+                                      </span>
                             </button>
 
-                           
+                            
+                    </div>
+
+                    <div className='w-[50px] h-[50px] bg-gray-100 ml-5 rounded-[50%] flex items-center justify-center text-[24px] text-gray-400'>
+
+                            <button className='w-[100%] h-[100%] flex items-center justify-center'>
+
+                                   <MdOutlineShoppingBag />
+
+                            </button>
+                     
+
                     </div>
 
                     </div>
@@ -120,8 +159,55 @@ const Navbar = () => {
 
                 </div>
 
+                <div className='w-[80%] h-[50%] bg-amber-800 flex justify-between'>
+
+                    
+                <div className='w-[40%] h-[100%] bg-blue-400 flex items-center'>
+
+                    <div className='w-[200px] h-[100%] bg-green-300 flex justify-center items-center '>
+
+                     
+
+                        <button className='w-[100%] h-[100%] text-[20px] bg-amber-400'>
+
+                               <MdOutlineDeliveryDining />
+
+                        </button>
+
+
+
+                    </div>
+
+                    <div className='w-[200px] h-[100%] bg-green-600 ml-5 flex justify-center items-center'>
+
+                    </div>
+
+                       <div className='w-[200px] h-[100%] bg-green-600 ml-5'>
+
+                    </div>
+
+
+                </div>
+
+                <div className='w-[30%] h-[100%] bg-indigo-950'>
+
+                    <button className='w-[100%] h-[100%]'>
+
+
+
+                    </button>
+
+                </div>
+
+                </div>
+
+
                
             </div>
+
+            {/* <div className='w-full h-[150px] bg-amber-200'>
+
+            </div> */}
 
         
         </div>
