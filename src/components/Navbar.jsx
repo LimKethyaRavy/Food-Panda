@@ -166,13 +166,14 @@ const Navbar = () => {
 
                     <div className='w-[200px] h-[100%] bg-green-300 flex justify-center items-center '>
 
-                     
-
-                        <button className='w-[100%] h-[100%] text-[20px] bg-amber-400'>
+                        <button className='w-[100%] h-[100%] text-[18px] bg-amber-400 flex justify-center items-center gap-3'>
 
                                <MdOutlineDeliveryDining />
 
+                                    <span className='flex'>Delivery</span>                        
                         </button>
+
+                    
 
 
 
